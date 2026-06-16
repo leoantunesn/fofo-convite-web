@@ -99,8 +99,8 @@ function Index() {
       <div className="max-w-md w-full">
         <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-2xl text-center">
           <img
-            src={cuteBunny}
-            alt="Coelhinho fofo com balão de coração"
+            src={hornet}
+            alt="Hornet de Silksong"
             width={180}
             height={180}
             className="mx-auto mb-6 drop-shadow-lg"
