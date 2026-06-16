@@ -81,7 +81,7 @@ function Index() {
   return (
     <div
       ref={containerRef}
-      className="relative flex min-h-screen items-center justify-center bg-background px-4 overflow-hidden"
+      className="relative flex min-h-screen items-center justify-center bg-background px-4 py-6 overflow-hidden"
     >
       {/* Floating hearts background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -94,16 +94,14 @@ function Index() {
       </div>
 
       <div className="max-w-md w-full">
-        <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-2xl text-center">
+        <div className="rounded-3xl border-2 border-primary/20 bg-card p-6 sm:p-8 shadow-2xl text-center">
           <img
             src={hornet}
             alt="Hornet de Silksong"
-            width={180}
-            height={180}
-            className="mx-auto mb-6 drop-shadow-lg"
+            className="mx-auto mb-4 sm:mb-6 drop-shadow-lg w-32 sm:w-40 md:w-44 h-auto"
           />
 
-          <h1 className="text-2xl font-bold text-foreground mb-8 leading-relaxed">
+          <h1 className="text-xl sm:text-2xl font-bold text-foreground mb-6 sm:mb-8 leading-relaxed">
             Quer sair cmg na sua próxima folga?
           </h1>
 
