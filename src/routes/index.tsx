@@ -68,10 +68,10 @@ function Index() {
               className="mx-auto mb-6"
             />
             <h1 className="text-3xl font-bold text-primary mb-4">
-              Yay! 🎉
+              Boa! 🎉
             </h1>
             <p className="text-lg text-card-foreground">
-              Mal posso esperar pela nossa saída! Vai ser incrível! 💕
+              Não esperava que fosse aceitar haha vai ser muito legal sz
             </p>
             <div className="mt-6 text-4xl">💖✨🌸</div>
           </div>
