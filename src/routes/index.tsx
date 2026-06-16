@@ -57,20 +57,18 @@ function Index() {
 
   if (showYes) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-background px-4">
+      <div className="flex min-h-screen items-center justify-center bg-background px-4 py-6">
         <div className="max-w-md w-full text-center animate-bounce-slow">
-          <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-xl">
+          <div className="rounded-3xl border-2 border-primary/20 bg-card p-6 sm:p-8 shadow-xl">
             <img
               src={hornet}
               alt="Hornet de Silksong feliz"
-              width={200}
-              height={200}
-              className="mx-auto mb-6"
+              className="mx-auto mb-4 sm:mb-6 w-36 sm:w-44 md:w-48 h-auto"
             />
-            <h1 className="text-3xl font-bold text-primary mb-4">
+            <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-4">
               Boa! 🎉
             </h1>
-            <p className="text-lg text-card-foreground">
+            <p className="text-base sm:text-lg text-card-foreground">
               Não esperava que fosse aceitar haha vai ser muito legal sz
             </p>
             <div className="mt-6 text-4xl">💖✨🌸</div>
@@ -83,7 +81,7 @@ function Index() {
   return (
     <div
       ref={containerRef}
-      className="relative flex min-h-screen items-center justify-center bg-background px-4 overflow-hidden"
+      className="relative flex min-h-screen items-center justify-center bg-background px-4 py-6 overflow-hidden"
     >
       {/* Floating hearts background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -96,20 +94,18 @@ function Index() {
       </div>
 
       <div className="max-w-md w-full">
-        <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-2xl text-center">
+        <div className="rounded-3xl border-2 border-primary/20 bg-card p-6 sm:p-8 shadow-2xl text-center">
           <img
             src={hornet}
             alt="Hornet de Silksong"
-            width={180}
-            height={180}
-            className="mx-auto mb-6 drop-shadow-lg"
+            className="mx-auto mb-4 sm:mb-6 drop-shadow-lg w-32 sm:w-40 md:w-44 h-auto"
           />
 
-          <h1 className="text-2xl font-bold text-foreground mb-8 leading-relaxed">
+          <h1 className="text-xl sm:text-2xl font-bold text-foreground mb-6 sm:mb-8 leading-relaxed">
             Quer sair cmg na sua próxima folga?
           </h1>
 
-          <div className="flex items-center justify-center gap-4 relative min-h-[80px]">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 relative min-h-[60px] sm:min-h-[80px]">
             <button
               onClick={() => setShowYes(true)}
               className="rounded-full bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:scale-105 hover:shadow-xl active:scale-95"
