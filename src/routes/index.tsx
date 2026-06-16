@@ -37,21 +37,20 @@ function Index() {
 
   const moveNoButton = useCallback(() => {
     const btn = noButtonRef.current;
-    const container = containerRef.current;
-    if (!btn || !container) return;
+    if (!btn) return;
 
-    const containerRect = container.getBoundingClientRect();
     const btnRect = btn.getBoundingClientRect();
 
-    const maxX = containerRect.width - btnRect.width - 16;
-    const maxY = containerRect.height - btnRect.height - 16;
+    const maxX = window.innerWidth - btnRect.width - 16;
+    const maxY = window.innerHeight - btnRect.height - 16;
 
     const randomX = Math.max(8, Math.random() * maxX);
     const randomY = Math.max(8, Math.random() * maxY);
 
-    btn.style.position = "absolute";
+    btn.style.position = "fixed";
     btn.style.left = `${randomX}px`;
     btn.style.top = `${randomY}px`;
+    btn.style.zIndex = "9999";
 
     setAttempts((prev) => prev + 1);
   }, []);
