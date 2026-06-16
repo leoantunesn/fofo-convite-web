@@ -14,8 +14,24 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const noMessages = [
+  "Não 😅",
+  "Eita, quase! 😜",
+  "Tente de novo! 🙈",
+  "Sou rápido demais! 🏃",
+  "Não vai conseguir! 😏",
+  "Quase! 🤭",
+  "Persistente, hein? 😼",
+  "Haha, errou! 😂",
+  "Só aceita o sim! 💕",
+  "Desiste não! 😘",
+  "Tá difícil? 😎",
+  "Vai, clica no sim! 🥺",
+];
+
 function Index() {
   const [showYes, setShowYes] = useState(false);
+  const [attempts, setAttempts] = useState(0);
   const noButtonRef = useRef<HTMLButtonElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -36,6 +52,8 @@ function Index() {
     btn.style.position = "absolute";
     btn.style.left = `${randomX}px`;
     btn.style.top = `${randomY}px`;
+
+    setAttempts((prev) => prev + 1);
   }, []);
 
   if (showYes) {
@@ -104,9 +122,9 @@ function Index() {
               ref={noButtonRef}
               onClick={moveNoButton}
               onMouseEnter={moveNoButton}
-              className="rounded-full bg-muted px-6 py-3 text-lg font-medium text-muted-foreground border border-border shadow-md transition-transform"
+              className="rounded-full bg-muted px-6 py-3 text-lg font-medium text-muted-foreground border border-border shadow-md transition-transform whitespace-nowrap"
             >
-              Não 😅
+              {noMessages[attempts % noMessages.length]}
             </button>
           </div>
         </div>
