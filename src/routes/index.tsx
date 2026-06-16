@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useRef, useCallback } from "react";
-import cuteBunny from "@/assets/cute-bunny.png";
+import hornet from "@/assets/hornet.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
