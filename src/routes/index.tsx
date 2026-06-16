@@ -14,8 +14,24 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const noMessages = [
+  "Não 😅",
+  "Eita, quase! 😜",
+  "Tente de novo! 🙈",
+  "Sou rápido demais! 🏃",
+  "Não vai conseguir! 😏",
+  "Quase! 🤭",
+  "Persistente, hein? 😼",
+  "Haha, errou! 😂",
+  "Só aceita o sim! 💕",
+  "Desiste não! 😘",
+  "Tá difícil? 😎",
+  "Vai, clica no sim! 🥺",
+];
+
 function Index() {
   const [showYes, setShowYes] = useState(false);
+  const [attempts, setAttempts] = useState(0);
   const noButtonRef = useRef<HTMLButtonElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -36,6 +52,8 @@ function Index() {
     btn.style.position = "absolute";
     btn.style.left = `${randomX}px`;
     btn.style.top = `${randomY}px`;
+
+    setAttempts((prev) => prev + 1);
   }, []);
 
   if (showYes) {
