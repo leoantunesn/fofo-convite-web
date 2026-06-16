@@ -62,8 +62,8 @@ function Index() {
         <div className="max-w-md w-full text-center animate-bounce-slow">
           <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-xl">
             <img
-              src={cuteBunny}
-              alt="Coelhinho fofo feliz"
+              src={hornet}
+              alt="Hornet de Silksong feliz"
               width={200}
               height={200}
               className="mx-auto mb-6"
