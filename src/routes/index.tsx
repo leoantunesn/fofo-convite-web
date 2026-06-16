@@ -105,7 +105,7 @@ function Index() {
             Quer sair cmg na sua próxima folga?
           </h1>
 
-          <div className="flex items-center justify-center gap-4 relative min-h-[80px]">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 relative min-h-[60px] sm:min-h-[80px]">
             <button
               onClick={() => setShowYes(true)}
               className="rounded-full bg-primary px-8 py-3 text-lg font-semibold text-primary-foreground shadow-lg transition-all hover:scale-105 hover:shadow-xl active:scale-95"
