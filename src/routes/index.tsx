@@ -122,9 +122,9 @@ function Index() {
               ref={noButtonRef}
               onClick={moveNoButton}
               onMouseEnter={moveNoButton}
-              className="rounded-full bg-muted px-6 py-3 text-lg font-medium text-muted-foreground border border-border shadow-md transition-transform"
+              className="rounded-full bg-muted px-6 py-3 text-lg font-medium text-muted-foreground border border-border shadow-md transition-transform whitespace-nowrap"
             >
-              Não 😅
+              {noMessages[attempts % noMessages.length]}
             </button>
           </div>
         </div>
