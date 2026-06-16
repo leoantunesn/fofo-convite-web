@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, useRef, useCallback } from "react";
-import cuteBunny from "@/assets/cute-bunny.png";
+import hornet from "@/assets/hornet.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -62,8 +62,8 @@ function Index() {
         <div className="max-w-md w-full text-center animate-bounce-slow">
           <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-xl">
             <img
-              src={cuteBunny}
-              alt="Coelhinho fofo feliz"
+              src={hornet}
+              alt="Hornet de Silksong feliz"
               width={200}
               height={200}
               className="mx-auto mb-6"
@@ -99,8 +99,8 @@ function Index() {
       <div className="max-w-md w-full">
         <div className="rounded-3xl border-2 border-primary/20 bg-card p-8 shadow-2xl text-center">
           <img
-            src={cuteBunny}
-            alt="Coelhinho fofo com balão de coração"
+            src={hornet}
+            alt="Hornet de Silksong"
             width={180}
             height={180}
             className="mx-auto mb-6 drop-shadow-lg"
