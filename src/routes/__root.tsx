@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Invite Cute" },
+      { name: "description", content: "A cute, interactive HTML website for asking someone out on a date." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Invite Cute" },
+      { property: "og:description", content: "A cute, interactive HTML website for asking someone out on a date." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Invite Cute" },
+      { name: "twitter:description", content: "A cute, interactive HTML website for asking someone out on a date." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/026040c6-28d9-4ba0-b0d4-8e6bacc94dcb/id-preview-e284fe6c--eeddce1a-daa6-46ed-803f-633dd6d7b0e3.lovable.app-1781657110050.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/026040c6-28d9-4ba0-b0d4-8e6bacc94dcb/id-preview-e284fe6c--eeddce1a-daa6-46ed-803f-633dd6d7b0e3.lovable.app-1781657110050.png" },
     ],
     links: [
       {
